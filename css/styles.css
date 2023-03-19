@@ -1,0 +1,350 @@
+html, body, header, main, nav, header, h1, nav, ul, li, section, div, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for box sizing applies to all elements, this was the only I could get the website not to scroll left and right. Necessary if using grid i think */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    /* margin: 0, auto; */
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.masthead {
+    color: #f1bf01;
+    font-weight: bold;
+    text-shadow: 2px 2.5px 2px #1a2532;
+}
+
+#pleasure_island {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 3em;
+    font-weight: 700;
+    /* text-shadow: 3px 2.5px 2px #1a2532; */
+}
+
+.shell {
+    display: flex;
+}
+
+#shelly {
+    padding: 1%;
+}
+
+.topnav {
+    overflow: hidden;
+    /* background: #c2b280; */
+    position: relative;
+    padding: 1.75em;
+    /* min-width: 100%; */
+}
+
+#myLinks {
+    display: none;
+    margin-left: 1em;
+}
+
+.topnav a {
+    color: #1a2532;
+    padding: 1em 1em;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    display: block;
+}
+
+.topnav a.icon {
+    background: #f1bf01;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.topnav a:hover {
+    background-color: #e2dfa2;
+    color: black;
+}
+
+.heading-button {
+    text-align: center;
+}
+
+button {
+    padding: 1em;
+    background-color: #d68210;
+    color: white;
+    border-radius: 29px;
+}
+
+.mission {
+    background-color: #1a2532;
+    text-align: center;
+    padding: 2em;
+    margin-top: .25em;
+    color: white;
+    font-family:'Lora', serif;
+    font-size: 1.5em;
+    }
+
+.mission_statement {
+    padding: 3%;
+}
+
+.home-grid {
+    display: grid;
+    /* grid-gap: 1em; */
+    grid-template-columns: 1fr;
+}
+
+.grid-item {
+    /* background-color: #6ab9d9; */
+    row-gap: 2em;
+    padding: 1em;
+}
+
+#middlegrid {
+    /* background-color: #fafae5; */
+    /* background-color: #f8f8ec; */
+    background-color: #e2dfa2;
+}
+
+.welcome {
+    text-align: center;
+    font-family:'Lora', serif;
+    font-weight: bold;
+    font-size: large;
+    padding: 6%;
+    color: #1a2532;
+}
+
+.eventlink {
+    display: block;
+    margin-left: 38%;
+    width: 25%;
+    background-color: #d68210;
+    padding: 1%;
+    font-family:'Lora', serif;
+    text-align: center;
+}
+
+.eventlink a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+h2 {
+    font-family:'Lora', serif;
+    color: #1a2532;
+    font-weight: bolder;
+}
+
+/* Events Page Styles*/
+
+/* setting the parameters of the frame(picture). Will also help keep the text from overflowing */
+.frame {
+    position: relative;
+    max-width: 450px;
+    margin: 2% auto;
+}
+
+.pic-text {
+    position: absolute;
+    bottom: 0%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    padding: 5%;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+/* End of Events Page Styles*/
+
+.contactMessage {
+    text-align: center;
+}
+
+.contactSocials {
+    text-align: center;
+}
+
+.contactSocials p {
+    display: inline-block;
+    padding: 5%;
+}
+
+.contactForm {
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    background-color: #f1bf01;
+    padding: 1%;
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    color: white;
+    padding: .5%;
+}
+
+footer p {
+    display: inline-block;
+    padding: .25%;
+}
+
+#mobile {
+    display: block;
+}
+#desktop {
+    display: none;
+}
+
+@media screen and (min-width: 650px) {
+header {
+    padding: 1em;
+}
+
+.mission_statement {
+    font-size: 22px;
+    text-align: center;
+}
+
+.home-grid {
+    font-size: 18px;
+}
+
+.topnav {
+    padding: .5em;
+}
+
+.heading-button {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.masthead {
+    text-align: left;
+}
+
+.topbutton {
+    text-align: right;
+    margin: 2em;
+}
+
+#mobile {
+    display: none;
+}
+#desktop {
+    display: block;
+}
+
+#myLinks {
+    display: inline;
+}
+
+.topnav a {
+    display: inline-block;
+    /* padding: .75em; */
+    padding: 1em 2.5em;
+}
+
+.topnav a.icon {
+    display: none;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    }
+
+.grid-item {
+    text-align: center;
+}
+
+.welcome {
+    font-size: 25px;
+}
+
+.eventGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+    margin-bottom: 7%;
+}
+
+.heading-button {
+    background-image: url("../images/sunset_1800.jpg");
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.about-grid p img {
+    margin-top: 5%;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 1fr;
+}
+
+.contactPic {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.contactMessage {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    /* background-color: aquamarine; */
+    text-align: center;
+    padding: 5%;
+}
+
+.contactSocials {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: #d68210;
+    text-align: center;
+    padding: 4%;
+}
+
+.contactForm {
+    padding: 4%;
+}
+
+input[type=text], input[type=email], input[type=tel] {
+    width: 30%;
+    padding: .75%;
+    border-radius: 7px;
+}
+
+input[type=submit] {
+    padding: 1% 2% 1% 2%;
+    background-color: #d68210;
+    border-radius: 15px;
+}
+
+}
+

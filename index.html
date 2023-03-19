@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en"/>
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Pleasure Island</title>
+</head>
+
+<body>
+
+    <div class="heading-button">
+        <div>
+        <header>
+            <h1 class="masthead" id="pleasure_island">Pleasure Island</h1>
+            <div class="shell">
+                <div id="shelly"><img src="images/vector.png" width="35" height="auto alt="seashell"></div>
+                <div><p class="masthead">CHAMBER OF COMMERCE</p></div> 
+            </div>   
+        </header>
+        </div>
+        <div class="topbutton"><a href="contact.html" target="blank"><button type="button">Contact Now!</button></a></div>
+    </div>
+    
+    <nav class="topnav">  
+    <div id="mobile"> 
+        <div id="myLinks">    
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div id="desktop"> 
+        <div>    
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>     
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+   
+    <main>
+
+        <section class="mission">
+        <h1>Our Mission</h1>
+        </section>
+
+        <section>
+            <p class="mission_statement">The Pleasure Island Chamber of Commerce strives to enhance the quality of life of the residents, stakeholders, and visitors to Pleasure Island and the contiguous community.  The Chamber provides the business community with the leadership, advocacy, and representation needed to enhance its membership, their respective businesses, and quality of life while promoting the North Carolina communities of Carolina Beach, Kure Beach, and Fort Fisher.</p>
+        </section>
+
+        <div class="home-grid">
+            <div class="grid-item" id="middlegrid"><img src="images/boats_500.png" alt="docked boats"></div>
+            <div class="grid-item" id="middlegrid">
+                <h2 class="carolinaBeach">Carolina Beach</h2>
+                <p>Not too far from Wilmington, Carolina Beach has so much to offer. There you will find a Boardwalk, Fishing Piers, State Parks, great locally owned restaurants and hot yummy donuts from the famous Britt's Donuts. Families find it laid back and fun! Looking for entertainment and exciting nightlife? Carolina Beach has that too.</p><br>
+                <p>Check out our Events Page for more information</p>
+                <p class="eventlink"><a href="events.html">Events</a></p>
+            </div>
+            <div class="grid-item"><img src="images/bouy_500.png" alt="bouy on the water"></div>
+            <div class="grid-item">
+                <h2 class="kureBeach">Kure Beach</h2>
+                <p>Experience a family-friendly retreat on the water. Kure Beach houses one of the oldest fishing pier on the Atlantic Coast. A day out with the family? You have many choices between a State Aquarium, Ocean Front Parks, Fishing Pier, and more. Making a trip with friends or colleagues? We have something for you too. Take a tour of our Fort Fisher State Historic Site or visit one of many local restaurants. You won't have to look to far to find something to do!</p><br>
+                <p>Check out our Events Page for more information</p>
+                <p class="eventlink"><a href="events.html">Events</a></p>
+            </div>
+
+            <div class="grid-item" id="middlegrid"><img src="images/homes_500.png" alt="beach homes"></div>
+            <div class="grid-item" id="middlegrid">
+                <h2 class="fortFisher">Fort Fisher</h2>
+                <p>Enjoy the views at For Fisher! The marsh attracts all types of wild life making room to capture beautiful photos and memories. In the right season, catch a glimpse of sea turles along the shores. Take advantage all the sites, sounds, activities and amenities. Activities include, hiking, swimming, fishing, picnicking and even four-wheel-drive beach driving! </p><br>
+                <p>Check out our Events Page for more information</p>
+                <p class="eventlink"><a href="events.html">Events</a></p>
+            </div>
+        </div>
+
+        <p class="welcome">Whether you are visiting or live here, we have something for everyone!</p>
+    
+    </main>
+
+    <footer class="footerLinks">
+        <div class="footerSocials">
+            <p><a href="https://www.instagram.com/pleasureislandchamber/" target="blank"><img src="images/instagram.png" width="30" height="auto" alt="instagram"></a></p>
+            <p><a href="https://www.facebook.com/PleasureIslandChamber" target="blank"><img src="images/facbook_100.png" width="35" height="auto alt="facebook"></a></p>
+            <p><a href="https://www.linkedin.com/in/picc-chamber-a02aa420b/" target="blank"><img src="images/linked.png" width="35" height="auto" alt="linkedin"></a></p>
+            <p><a href="mailto:info@pleasureislandnc.org" target="blank"><img src="images/email.png" width="30" heigh="auto" alt="email"></a></p>
+        </div>
+        <div class="footerNav">
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div><p>1121 N Lake Park Blvd. | Carolina Beach, NC 28428 | Phone: (910) 458-8434</p></div>
+        <div><p>&copy; Copyright 2023 &#124; All Rights Reserved &#124; Designed by Annie Reeves</p></div>
+    </footer>
+   
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+             x.style.display = "none";
+            } else {
+                x.style.display = "block";
+              }
+            }
+    </script>    
+</body>
+
+</html>
